@@ -81,6 +81,7 @@ int main(int arg,char **argv){
   //                               ,PixelMapUnits::count_per_sec);
   
   oversampled_image.AddSource(source);  // No lensing here, just add the source.
+  //oversampled_image.AddGridMapBrightness(gridmap);  // add a GriMap to the image
   
   PixelMap<float> output_image(center.x,Npixels,final_pixel_size
                                  ,PixelMapUnits::count_per_sec);
