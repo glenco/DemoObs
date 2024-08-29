@@ -74,7 +74,6 @@ int main(int arg,char **argv){
   
   // if no PSF map is provided Gaussian smoothing can be done by setting the FWHM in arcseconds
   obs.setSeeing(1.5*final_pixel_size/arcsecTOradians);
-  obs.setZeropoint( zeropoints[Band::EUC_VIS] );
   
   PixelMap<float> oversampled_image(center.x,over_sample_factor*Npixels,final_pixel_size/over_sample_factor);
   // or PixelMap<float> oversamples_image(center.x,obs.getNxInput(),obs.getPixelSize()/over_sample_factor
